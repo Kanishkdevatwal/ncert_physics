@@ -1,0 +1,80 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{11.15}
+\author{EE23BTECH11029 - Kanishk}
+\maketitle
+\newpage
+
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\textbf{Question}:\\ 
+A SONAR system fixed in a submarine operates at a frequency 40.0 kHz. An enemy submarine moves towards the SONAR with a speed of 360 km/hr. What is the frequency of sound reflected by the submarine? Take the speed of sound in water to be 1450 m/s.\\
+
+\textbf{Solution}:\\
+Operating frequency of the SONAR system, $f=40kHz$\\
+Speed of the enemy submarine, $Ve=360km/h$ $=100m/s$\\
+Speed of sound in water, $V=1450 m/s$\\
+The source(SONAR system) is at rest and the observer (enemy submarine) is moving toward it. Hence, the apparent frequency (f') received and reflected by the submarine is given by the relation:
+
+
+$$f'=(\frac{V+Ve}{V})f$$
+
+$$= (\frac{1450+100}{1450})40=42.76kHz$$
+
+The frequency (f'') received by the enemy submarine is given by the relation:
+
+$$f''=(\frac{V}{V+Vs})f'$$
+where, Vs=100m/s
+
+$$f''=(\frac{1450}{1450-100})42.76$$
+$$=45.93kHz$$
+
+
+\end{document}
